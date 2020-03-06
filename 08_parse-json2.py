@@ -2,9 +2,8 @@ import urllib.parse
 import requests
 
 main_api = "https://www.mapquestapi.com/directions/v2/route?"
-while True:
-    orig = input( "LOCACIÓN INICIAL:")
-    dest = input("Destino final:")
+orig = "Quito"
+dest = "Guayaquil"
 key = "AG16tL5NbiMNrIhksG7VPUJTVKKZaTDy"
 url = main_api + urllib.parse.urlencode({"key":key,"from":orig,"to":dest})
 print("URL: " + (url))
